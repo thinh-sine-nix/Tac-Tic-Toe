@@ -11,10 +11,32 @@
 
 body {
   margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.title {
+  display: inline-block;
+  font-family: "Arial", sans-serif;
+  font-size: 3em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: color 0.3s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.title:hover {
+  color: #ff6347; /* Màu chữ khi hover */
+  transform: scale(1.1); /* Phóng to khi hover */
 }
 
 .board {
-  width: 100vw;
+  width: auto;
   height: 100vh;
   display: grid;
   justify-content: center;
